@@ -35,7 +35,7 @@ jobs:
         with: 
           name: mysite
           path: dist
-          retentions-days: 3
+          retention-days: 3
 
   deploy:
     runs-on: ubuntu-latest
