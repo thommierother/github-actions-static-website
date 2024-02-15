@@ -27,3 +27,6 @@ jobs:
           npm clean-install
           npm run build
 
+      - name: list files
+        run:  |
+          ls -R dist/
