@@ -22,6 +22,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: add nodejs dependencies
+      - name: add nodejs dependencies and build
         run:  |
           npm clean-install
+          npm run build
+
