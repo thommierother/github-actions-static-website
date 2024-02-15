@@ -55,6 +55,6 @@ jobs:
 
       - name: view credentials 
         run: |
-          echo "{{ $vars.BUCKET_NAME}}"
-          echo "{{ $secrets.AWS_ACCESS_KEY_ID}}"
-          echo "{{ $secrets.AWS_SECRET_ACCESS_KEY}}"                    
+          echo "${{ vars.BUCKET_NAME}}"
+          echo "${{ secrets.AWS_ACCESS_KEY_ID}}"
+          echo "${{ secrets.AWS_SECRET_ACCESS_KEY}}"                    
